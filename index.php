@@ -8,37 +8,17 @@
 </head>
 <body>
     <form name="form" action="index.php" method="get">
-        <input type="text"  name = "day" placeholder="Enter Day number">
+        <input type="text"  name = "number" placeholder="Enter number">
         <input type="submit">
     </form>
     <?php
-        $day =  $_GET['day']; 
-        switch ($day){
-            case 1:
-                echo "Monday";
-                break;
-            case 2:
-                echo "Tuesday";
-                break;
-            case 3;
-                echo "Wednesday";
-                break;
-            case 4:
-                echo "Thursday";
-                break;
-            case 5:
-                echo "Friday";
-                break;
-            case 6;
-                echo "Saturday";
-                break;
-            case 7:
-                echo "Sunday";
-                break;
-            default:
-                echo "Invalid Day Number";
-                break;    
+        $number =  $_GET['number']; 
+        $fact = 1;
+        for($number;$number>1;$number--){
+            $fact*=$number;
         }
+        echo $fact;
+        
     ?>
 </body>
 </html>

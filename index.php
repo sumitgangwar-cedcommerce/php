@@ -8,8 +8,8 @@
 </head>
 <body>
     <?php
-        $a = "Welcome"; $b = "PHP";
-        echo $a." to the ".$b." World";
+        $a = "Print"; $b = "PHP";
+        echo $a." two ".$b." variable in singe echo";
     ?>
 </body>
 </html>

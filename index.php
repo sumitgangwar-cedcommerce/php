@@ -8,9 +8,8 @@
 </head>
 <body>
     <?php
-        $a = 5; $b = 15;
-        echo "Sum of number:=".($a+$b)."<br>";
-        echo "Difference of number:=".($b-$a);
+        $a = "Welcome"; $b = "PHP";
+        echo $a." to the ".$b." World";
     ?>
 </body>
 </html>

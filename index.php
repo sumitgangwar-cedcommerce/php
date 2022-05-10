@@ -8,15 +8,37 @@
 </head>
 <body>
     <form name="form" action="index.php" method="get">
-        <input type="text" id="marks" name = "marks" placeholder="Enter marks">
+        <input type="text"  name = "day" placeholder="Enter Day number">
         <input type="submit">
     </form>
     <?php
-        $marks =  $_GET['marks']; 
-        if($marks>=60)  echo "First Division";
-        elseif($marks>=45 && $marks<=59)  echo "Second Division";
-        elseif($marks>=33 && $marks<=44)  echo "Third Division";
-        else echo "Fail";
+        $day =  $_GET['day']; 
+        switch ($day){
+            case 1:
+                echo "Monday";
+                break;
+            case 2:
+                echo "Tuesday";
+                break;
+            case 3;
+                echo "Wednesday";
+                break;
+            case 4:
+                echo "Thursday";
+                break;
+            case 5:
+                echo "Friday";
+                break;
+            case 6;
+                echo "Saturday";
+                break;
+            case 7:
+                echo "Sunday";
+                break;
+            default:
+                echo "Invalid Day Number";
+                break;    
+        }
     ?>
 </body>
 </html>

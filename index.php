@@ -8,12 +8,9 @@
 </head>
 <body>
     <?php
-        $count = 5;
-        while($count<16){
-            echo $count;
-            echo "<br>";
-            $count++;
-        }
+        $a = 5; $b = 15;
+        echo "Sum of number:=".($a+$b)."<br>";
+        echo "Difference of number:=".($b-$a);
     ?>
 </body>
 </html>

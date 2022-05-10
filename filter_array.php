@@ -8,17 +8,16 @@
 </head>
 <body>
     <?php
-         $arr_1st = array("c1" => 'Red', 'c2' => 'Green', 'c3' => 'White','c4' => 'Black');
-         $arr_2nd = array('c2', 'c4');
-         echo "Array"."<br>"."("."<br>";
-         foreach($arr_1st as $x=>$val){
-             $var = 1;
-             foreach ($arr_2nd as $key) {
-                 if($x==$key)   $var = 0;
-             }  
-             if($var)   echo "[".$x."]=>".$val."<br>";
-         }
-         echo ")";
+         
+         $colors = array('key1' => 'Red', 'key2' => 'Green', 'key3' => 'Black');
+        $given_value = 'Red';
+        print_r($colors);
+        echo "<br>";
+        $filtered_array = array_filter($colors, function ($element) use ($given_value) { return ($element != $given_value);}); 
+
+        echo "<br>";
+        print_r($filtered_array);
+        
     ?>
 </body>
 </html>

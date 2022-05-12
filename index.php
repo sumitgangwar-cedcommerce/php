@@ -1,32 +1,21 @@
+<?php require 'include/config.php'; ?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<title>
+		<?php echo $tag_line;?>
+	</title>
+	<link href="style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-    <?php
-    echo "<table style='width=400px ; border-collapse = collapse;margin:0px;padding:0px' >";
-    $t = 0;
-       for($i=0;$i<9;$i++){
-           echo "<tr style='border: solid;margin:0px;padding:0px'>";
-    
-        for($j=0;$j<9;$j++){
-           if($t==0){
-            echo "<td  style='height=30px ; background-color: black;border: solid; margin:0px; padding:0px'>sfcf</td>";
-            $t = 1;
-           }
-           else{
-            echo "<td style='height=30px ; background-color = white ; color:  white;border:solid;margin:0px;padding:0px'>rrr</td>";
-            $t = 0;
-           } 
-           
-        }
-            echo "</tr>";    
-       }
-    echo "</table>"; 
-    ?>
+	<?php include('include/header.php')?>
+	<div id="main">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+		<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+		<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+	</div>
+	<?php include('include/footer.php');?>
 </body>
 </html>
